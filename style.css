@@ -44,3 +44,17 @@
 .detail-story>p:not(.eyebrow){font-size:13px;line-height:2;color:#70695f}
 .detail-back{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:30px}
 @media(max-width:760px){.product-detail-hero{grid-template-columns:1fr;padding:45px 6% 60px;gap:35px}.product-detail-hero .product-art{height:320px}.product-detail-hero h1{font-size:54px}.variant-grid{grid-template-columns:1fr}.variant-card .dimensions{min-height:0}.detail-story{text-align:left}}
+
+
+/* Homepage: planned prototype and quality process */
+.testing-section{background:#f1ece5}
+.testing-intro{max-width:760px;font-size:13px;line-height:2;color:#70695f;margin:-12px 0 35px}
+.testing-steps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 38px;border-top:1px solid #d9d1c6}
+.testing-step{display:grid;grid-template-columns:42px 1fr;gap:15px;padding:25px 0;border-bottom:1px solid #d9d1c6}
+.testing-number{font-family:var(--serif);font-size:25px;color:#9b8063}
+.testing-step h3{font-family:var(--serif);font-size:23px;font-weight:400;margin:0 0 9px}
+.testing-step p{font-size:11px;line-height:1.95;color:#70695f;margin:0}
+.testing-note{display:flex;gap:15px;align-items:flex-start;background:#e6dfd4;padding:22px 25px;margin-top:32px}
+.testing-note .tiny-star{flex-shrink:0}
+.testing-note p{font-size:11px;line-height:1.9;color:#6f6a61;margin:0}
+@media(max-width:620px){.testing-steps{grid-template-columns:1fr}.testing-step{padding:22px 0}.testing-step h3{font-size:22px}.testing-note{padding:18px}}
