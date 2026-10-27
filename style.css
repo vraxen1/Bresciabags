@@ -12,3 +12,8 @@
 .currency-toggle:hover{background:#272620;color:#fff;border-color:#272620}
 @media(max-width:850px){.currency-toggle{padding:10px 11px;font-size:10px}}
 @media(max-width:620px){.currency-toggle{margin-left:auto;padding:9px 10px;font-size:9px;letter-spacing:.2px}.site-header{gap:12px}}
+
+/* Keep the catalogue's small editorial labels centered and neatly wrapped. */
+.product-art span{left:0;right:0;width:auto;padding:0 24px;box-sizing:border-box;text-align:center;line-height:1.5;text-wrap:balance}
+.product-art i{max-width:calc(100% - 44px);text-align:center;line-height:1.12;text-wrap:balance;overflow-wrap:normal;font-size:clamp(21px,2.5vw,34px)}
+@media(max-width:760px){.product-art span{padding:0 18px}.product-art i{max-width:calc(100% - 36px);font-size:clamp(21px,4vw,30px)}}
