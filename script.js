@@ -51,9 +51,13 @@ if (toggle && nav) {
       if (currency === 'EUR') {
         price.element.textContent = price.original;
       } else {
+        const converted = price.euros * EUR_TO_USD;
+        const wholeDollars = Math.floor(converted);
+        // Keep the leading dollar digits, set the final dollar digit to 9, and use .99 cents.
+        const marketPrice = Math.floor(wholeDollars / 10) * 10 + 9;
         const amount = new Intl.NumberFormat('en-US', {
           style: 'currency', currency: 'USD', minimumFractionDigits: 2, maximumFractionDigits: 2
-        }).format(price.euros * EUR_TO_USD);
+        }).format(marketPrice + 0.99);
         price.element.textContent = price.prefix + amount;
       }
     });
