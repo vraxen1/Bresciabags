@@ -58,3 +58,18 @@
 .testing-note .tiny-star{flex-shrink:0}
 .testing-note p{font-size:11px;line-height:1.9;color:#6f6a61;margin:0}
 @media(max-width:620px){.testing-steps{grid-template-columns:1fr}.testing-step{padding:22px 0}.testing-step h3{font-size:22px}.testing-note{padding:18px}}
+
+
+/* Homepage: individual final inspection for finished products */
+.finished-quality{background:#fbf9f5}
+.finished-quality-intro{max-width:760px;font-size:13px;line-height:2;color:#70695f;margin:-12px 0 35px}
+.finished-quality-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.finished-quality-card{padding:25px 20px;border:1px solid #ded7cd;background:#f7f4ef;min-height:215px}
+.finished-quality-card>span{font-family:var(--serif);font-size:24px;color:#9b8063}
+.finished-quality-card h3{font-family:var(--serif);font-size:22px;font-weight:400;line-height:1.2;margin:20px 0 10px}
+.finished-quality-card p{font-size:11px;line-height:1.9;color:#70695f;margin:0}
+.finished-quality-note{display:flex;gap:15px;align-items:flex-start;background:#eee8df;padding:22px 25px;margin-top:24px}
+.finished-quality-note .tiny-star{flex-shrink:0}
+.finished-quality-note p{font-size:11px;line-height:1.9;color:#6f6a61;margin:0}
+@media(max-width:900px){.finished-quality-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.finished-quality-grid{grid-template-columns:1fr}.finished-quality-card{min-height:0;padding:22px}.finished-quality-card h3{margin-top:13px}.finished-quality-note{padding:18px}}
