@@ -96,3 +96,8 @@
 .finished-quality-note p{font-size:11px;line-height:1.9;color:#6f6a61;margin:0}
 @media(max-width:900px){.finished-quality-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:520px){.finished-quality-grid{grid-template-columns:1fr}.finished-quality-card{min-height:0;padding:22px}.finished-quality-card h3{margin-top:13px}.finished-quality-note{padding:18px}}
+
+/* Clear separation for numbered construction layers, especially on narrow screens. */
+.construction-layer{column-gap:26px}
+.construction-index{display:block;line-height:1.2;white-space:nowrap;align-self:start;padding-top:3px}
+@media(max-width:620px){.construction-layer{column-gap:14px}.construction-index{font-size:21px}}
